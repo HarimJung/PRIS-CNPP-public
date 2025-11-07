@@ -1,0 +1,10 @@
+# PRIS-CIP 프로젝트 필수 라이브러리
+streamlit
+pandas
+plotly-express
+langchain
+langchain-openai
+langchain-community
+pypdf
+tiktoken
+faiss-cpu
