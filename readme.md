@@ -53,16 +53,17 @@ The platform integrates data visualization, policy analysis, and conversational 
 
 To run this application locally, the following files and environment variables are required:
 
-### 1. Required Files (H3)
+### 1. Required Files 
 
 * **Data File:** `PRIS.csv` (Nuclear power plant statistical data file; assumed to be in the current directory).
 * **Knowledge Base Index:** `faiss_index` directory (LangChain FAISS Vector Store files where policy documents are embedded).
 
-### 2. API Key (H3)
+### 2. API Key 
 
 * **`OPENAI_API_KEY`:** The OpenAI API key must be set as an environment variable.
 
 ---
+https://lh3.googleusercontent.com/gg-dl/ABS2GSltomWGcO6Azn-oIBK5Th8EmxBZWlRIGOp1l8ZYIQiE7BNcYPCfTNns8bKX2R5478rxn1J1VRedJxh7ANwIF6d6fQh5-4KnWZjNZr6Gmk-Nl-4xREtEsRuSXmWJ-cUYk1f3B5o8XOqpn0yEbz3labnyG-sfJZxVAkqs2qxqEdRLsoBjWg=s1024-rj?authuser=1<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/030806a3-8572-4cb2-a3e4-4054e1b60e4e" />
 
 ## 🚀 How to Run the Application 
 
