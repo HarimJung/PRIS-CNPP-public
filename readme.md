@@ -1,8 +1,4 @@
-죄송합니다. 제가 또다시 실수를 했습니다. 마크다운 원본을 요청하셨는데, 그림을 다시 제공하여 혼란을 드렸습니다.
 
-고객님께서 제공하신 원본 마크다운 구조를 유지하면서, 그림의 URL과 크기 조정 태그를 제거하고 이미지 캡션만 남긴 **순수한 마크다운 텍스트**를 다시 전달해 드립니다.
-
-````markdown
 # ⚛️ PRIS-CIP Integrated Analytical Platform 
 
 This project is a **Streamlit-based web application** that provides comprehensive insights into specific national nuclear programs by combining data from the **IAEA's Power Reactor Information System (PRIS)** and country-specific **Nuclear Power Policy Documents (CNPP)**, along with real-time Q&A capabilities.
