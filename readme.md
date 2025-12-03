@@ -5,7 +5,7 @@ This project is a **Streamlit-based web application** that provides comprehensiv
 
 ---
 
-## 🌟 Key Features (H2)
+## 🌟 Key Features 
 
 The platform integrates data visualization, policy analysis, and conversational Q&A functionalities into a single interface.
 
@@ -90,7 +90,7 @@ streamlit run [filename].py
 
 # ⚛️ PRIS-CIP Analytical Platform
 
-# ⚛️ PRIS-CIP Analytical Platform
+
 
 **PRIS-CIP Analytical Platform**은 Streamlit을 기반으로 구축된 **RAG(Retrieval-Augmented Generation)** 시스템입니다. IAEA PRIS(Power Reactor Information System)의 통계 데이터와 CNPP(Country Nuclear Power Profiles)의 정책 문서를 통합하여, 국가별 핵발전 프로그램에 대한 심층 분석 리포트와 실시간 Q&A 챗봇 기능을 제공합니다.
 
@@ -110,7 +110,7 @@ The **PRIS-CIP Analytical Platform** is a **RAG (Retrieval-Augmented Generation)
 This project utilizes **Streamlit** as the frontend/backend host and implements a retrieval-augmented generation pipeline using **LangChain** and **FAISS**.
 
 ### 🎥 System Demo
-[![Watch the Demo](https://img.youtube.com/vi/EnGxLJSyZ6Q/maxresdefault.jpg)](https://youtu.be/EnGxLJSyZ6Q)
+[![PRIS-CIP Demo Video](https://img.youtube.com/vi/EnGxLJSyZ6Q/hqdefault.jpg)](https://youtu.be/EnGxLJSyZ6Q)
 
 ```mermaid
 graph TD
