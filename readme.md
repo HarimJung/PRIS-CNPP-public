@@ -90,17 +90,35 @@ streamlit run [filename].py
 
 # ⚛️ PRIS-CIP Analytical Platform
 
+# ⚛️ PRIS-CIP Analytical Platform
+
 **PRIS-CIP Analytical Platform**은 Streamlit을 기반으로 구축된 **RAG(Retrieval-Augmented Generation)** 시스템입니다. IAEA PRIS(Power Reactor Information System)의 통계 데이터와 CNPP(Country Nuclear Power Profiles)의 정책 문서를 통합하여, 국가별 핵발전 프로그램에 대한 심층 분석 리포트와 실시간 Q&A 챗봇 기능을 제공합니다.
 
 ---
 
+## 🏗️ System Architecture
 
+
+# ⚛️ PRIS-CIP Analytical Platform
+
+**PRIS-CIP Analytical Platform**은 Streamlit을 기반으로 구축된 **RAG(Retrieval-Augmented Generation)** 시스템입니다. IAEA PRIS(Power Reactor Information System)의 통계 데이터와 CNPP(Country Nuclear Power Profiles)의 정책 문서를 통합하여, 국가별 핵발전 프로그램에 대한 심층 분석 리포트와 실시간 Q&A 챗봇 기능을 제공합니다.
+
+---
+
+## 🏗️ System Architecture
+
+이 프로젝트는 **Streamlit**을 프론트엔드/백엔드 호스트로 사용하며, **LangChain**과 **FAISS**를 통해 검색 증강 생성 파이프라인을 구현합니다.
+
+```mermaid
 graph TD
-    %% Define Components (Nodes)
+    %% 1. Define Nodes (Main)
     A["User/Client<br>(Streamlit App)"]
-    B("Streamlit Server<br>(Frontend)")
-    
-    subgraph Backend_Logic ["Backend Logic (Python)"]
+    B["Streamlit Server<br>(Frontend)"]
+    H["Tableau Public Server"]
+
+    %% 2. Define Subgraph (Backend)
+    subgraph Backend ["Backend Logic (Python)"]
+        direction TB
         C{"DataAnalyzer:<br>PRIS.csv Read"}
         D["FAISS Vector Store:<br>faiss_index"]
         E["OpenAI Embeddings Model"]
@@ -108,10 +126,7 @@ graph TD
         G["LangChain RAG Chain:<br>Prompt/Parser"]
     end
 
-    %% External Component
-    H["Tableau Public Server"]
-
-    %% Data and Request Flow
+    %% 3. Data and Request Flow
     A -- "1. Interaction (Filter/Question)" --> B
     B -- "2. Call Methods" --> C
     
@@ -131,6 +146,6 @@ graph TD
     B -- "11. Embed Tableau URL" --> H
     H -- "12. Display Interactive Viz" --> A
     
-    %% Styling
+    %% 4. Styling
     classDef external fill:#f9f,stroke:#333;
     class H external
