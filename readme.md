@@ -1,5 +1,5 @@
 
-# ⚛️ PRIS-CIP Integrated Analytical Platform (H1)
+# ⚛️ PRIS-CIP Integrated Analytical Platform 
 
 This project is a **Streamlit-based web application** that provides comprehensive insights into specific national nuclear programs by combining data from the **IAEA's Power Reactor Information System (PRIS)** and country-specific **Nuclear Power Policy Documents (CNPP)**, along with real-time Q&A capabilities.
 
@@ -9,12 +9,12 @@ This project is a **Streamlit-based web application** that provides comprehensiv
 
 The platform integrates data visualization, policy analysis, and conversational Q&A functionalities into a single interface.
 
-### 1. 📊 Interactive Data Dashboard (Tableau Integration) (H3)
+### 1. 📊 Interactive Data Dashboard (Tableau Integration) 
 
 * **PRIS Data Visualization:** Displays a **Tableau dashboard** that is dynamically filtered in real-time based on the selected country and reactor type.
 * **Statistical Context:** Users can immediately check the country's **nuclear capacity, reactor type distribution, and operational performance metrics** based on the visualized data.
 
-### 2. 🎯 Country-Specific Guided Analysis & Report Generation (RAG-based) (H3)
+### 2. 🎯 Country-Specific Guided Analysis & Report Generation (RAG-based) 
 
 * **Dynamic Analysis Topics:** Provides a detailed list of analysis questions specific to the selected country (e.g., Korea, UAE, China) covering:
     * Policy
@@ -29,14 +29,14 @@ The platform integrates data visualization, policy analysis, and conversational 
 [Image of a diagram illustrating the RAG process of retrieval, integration, and generation]
 
 
-### 3. 💬 Real-Time Q&A Chatbot (H3)
+### 3. 💬 Real-Time Q&A Chatbot 
 
 * **Ad-hoc Q&A:** When an arbitrary question about a country's nuclear program is entered, the **RAG (Retrieval-Augmented Generation) engine** utilizes relevant policy documents and statistical context to provide accurate, evidence-based answers.
 * **Data-Driven Responses:** Answers consistently reference documents from the knowledge base and the statistical information of the currently selected country.
 
 ---
 
-## 💻 Technology Stack (H2)
+## 💻 Technology Stack 
 
 | Category | Technology/Tool | Role |
 | :--- | :--- | :--- |
@@ -49,7 +49,7 @@ The platform integrates data visualization, policy analysis, and conversational 
 
 ---
 
-## 🛠️ Prerequisites and Setup (H2)
+## 🛠️ Prerequisites and Setup 
 
 To run this application locally, the following files and environment variables are required:
 
@@ -64,9 +64,9 @@ To run this application locally, the following files and environment variables a
 
 ---
 
-## 🚀 How to Run the Application (H2)
+## 🚀 How to Run the Application 
 
-### 1. Install Required Libraries (H3)
+### 1. Install Required Libraries 
 
 ```bash
 pip install streamlit pandas langchain openai
@@ -74,7 +74,7 @@ pip install streamlit pandas langchain openai
 pip install faiss-cpu langchain-openai
 ````
 
-### 2\. Run Streamlit (H3)
+### 2\. Run Streamlit 
 
 ```bash
 streamlit run [filename].py
