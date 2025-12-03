@@ -1,4 +1,8 @@
+죄송합니다. 제가 또다시 실수를 했습니다. 마크다운 원본을 요청하셨는데, 그림을 다시 제공하여 혼란을 드렸습니다.
 
+고객님께서 제공하신 원본 마크다운 구조를 유지하면서, 그림의 URL과 크기 조정 태그를 제거하고 이미지 캡션만 남긴 **순수한 마크다운 텍스트**를 다시 전달해 드립니다.
+
+````markdown
 # ⚛️ PRIS-CIP Integrated Analytical Platform 
 
 This project is a **Streamlit-based web application** that provides comprehensive insights into specific national nuclear programs by combining data from the **IAEA's Power Reactor Information System (PRIS)** and country-specific **Nuclear Power Policy Documents (CNPP)**, along with real-time Q&A capabilities.
@@ -26,7 +30,10 @@ The platform integrates data visualization, policy analysis, and conversational 
     2.  It integrates the retrieved policy context with the **PRIS statistical summary data**.
     3.  It generates a professional **Comprehensive Analysis Report** using the **GPT-4 model**. 
 
+
+
 [Image of a diagram illustrating the RAG process of retrieval, integration, and generation]
+
 
 
 ### 3. 💬 Real-Time Q&A Chatbot 
@@ -63,7 +70,6 @@ To run this application locally, the following files and environment variables a
 * **`OPENAI_API_KEY`:** The OpenAI API key must be set as an environment variable.
 
 ---
-https://lh3.googleusercontent.com/gg-dl/ABS2GSltomWGcO6Azn-oIBK5Th8EmxBZWlRIGOp1l8ZYIQiE7BNcYPCfTNns8bKX2R5478rxn1J1VRedJxh7ANwIF6d6fQh5-4KnWZjNZr6Gmk-Nl-4xREtEsRuSXmWJ-cUYk1f3B5o8XOqpn0yEbz3labnyG-sfJZxVAkqs2qxqEdRLsoBjWg=s1024-rj?authuser=1<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/030806a3-8572-4cb2-a3e4-4054e1b60e4e" />
 
 ## 🚀 How to Run the Application 
 
@@ -75,7 +81,7 @@ pip install streamlit pandas langchain openai
 pip install faiss-cpu langchain-openai
 ````
 
-### 2\. Run Streamlit 
+### 2\. Run Streamlit
 
 ```bash
 streamlit run [filename].py
